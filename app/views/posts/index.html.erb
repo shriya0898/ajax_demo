@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+<h1>Post</h1>
+<%= render 'form', post: @post %>
+<br>
+<table>
+  <thead>
+    <tr>
+      <th>Tittle</th>
+      <th>Body</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody id= "posts">
+    <%= render @posts %>
+  </tbody>
+</table>
+<br>
+<%#= link_to 'New Post', new_post_path, remote: true %>
